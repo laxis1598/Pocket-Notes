@@ -87,7 +87,7 @@ const loadMoreHandler=()=> {
 
 //local storage handler for fetching all added notes
 const localStorageHandler=()=> {
-    loadButton.classList.remove("display");
+    //loadButton.classList.remove("display");
     if(localStorage.getItem("count")!=0)
     {
         for(i=j;i<=storageCount;i++)
@@ -119,14 +119,12 @@ const localStorageHandler=()=> {
                     editTickFirst.classList.add("tick")
                     container.classList.remove("display");
                     loadButton.classList.remove("display");
-                    
+                    return;
                 }
-            } 
+            }   
             else {
-                loadButton.classList.add("display");
                 delButton.classList.add("display");
                 emptyNotes.classList.remove("display");
-                return;
             }              
         }
     }  
