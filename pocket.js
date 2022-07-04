@@ -87,7 +87,7 @@ const loadMoreHandler=()=> {
 
 //local storage handler for fetching all added notes
 const localStorageHandler=()=> {
-    //loadButton.classList.remove("display");
+    loadButton.classList.add("display");
     if(localStorage.getItem("count")!=0)
     {
         for(i=j;i<=storageCount;i++)
