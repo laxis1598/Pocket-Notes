@@ -105,7 +105,6 @@ const localStorageHandler=()=> {
                 if(load<=loadCount)
                     {
                         container.insertAdjacentHTML('beforeend',localStorage.getItem(`${i}`));
-                        loadButton.classList.add("display");
                     }  
                 else 
                 {
@@ -120,12 +119,14 @@ const localStorageHandler=()=> {
                     editTickFirst.classList.add("tick")
                     container.classList.remove("display");
                     loadButton.classList.remove("display");
-                    return;
+                    
                 }
-            }   
+            } 
             else {
+                loadButton.classList.add("display");
                 delButton.classList.add("display");
                 emptyNotes.classList.remove("display");
+                return;
             }              
         }
     }  
