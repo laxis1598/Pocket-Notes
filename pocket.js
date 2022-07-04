@@ -105,6 +105,7 @@ const localStorageHandler=()=> {
                 if(load<=loadCount)
                     {
                         container.insertAdjacentHTML('beforeend',localStorage.getItem(`${i}`));
+                        loadButton.classList.add("display");
                     }  
                 else 
                 {
